@@ -1,0 +1,36 @@
+.app {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recipeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: #e74c3c;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+  
+  .recipeGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
